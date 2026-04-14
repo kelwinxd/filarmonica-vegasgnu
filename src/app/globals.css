@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main-color:rgb(132, 0, 255);
+  --black-color:#080708;
+
+  --width-bullet: 20px !important;
+  --height-bullet: 20px !important;
+  --bg-bullet: rgb(196, 18, 18) !important;
+  --swiper-pagination-bullet-size {
+  size: 20px;
+}
+  --font-title:
+
+
+}
+
+a,p,h1,h2,h3 {
+   font-family: "Space Grotesk", sans-serif;
+   
+}
+
+@theme {
+  --color-blackmain: #080708;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-mainblue: #316998;
+  --font-title: font-family: "Unbounded", sans-serif;
+  --text-color-parag: #080708;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-pagination-bullet {
+  width: var(--widht-bullet);
+  height: var(--height-bullet);
+  background: var(--bg-bullet);
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: var(--widht-bullet);
+  height: var(--height-bullet);
+  background: var(--color-mainblue) !important;
+  opacity: 1 !important;
+}
+--swiper-pagination-bullet-size {
+  size: 20px;
+}
