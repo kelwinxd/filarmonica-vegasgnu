@@ -28,7 +28,7 @@ export default function Carousel() {
     <Swiper
       slidesPerView={1}
       loop
-      autoplay={{ delay: 3000 }}
+      autoplay={{ delay: 4000 }}
        modules={[Navigation, Autoplay, Pagination]}
         navigation
         speed={900}
