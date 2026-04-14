@@ -30,6 +30,7 @@ a,p,h1,h2,h3 {
   --color-tahiti: #3ab7bf;
   --color-bermuda: #78dcca;
   --color-mainblue: #316998;
+  --font-fam-parag: font-family: "Space Grotesk", sans-serif;
   --font-title: font-family: "Unbounded", sans-serif;
   --text-color-parag: #080708;
 }
