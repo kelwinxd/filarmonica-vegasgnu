@@ -48,7 +48,7 @@ export default function Carousel() {
     className="object-cover object-top"
   />
 
-            <h2 className="absolute bottom-4 left-4 text-white">
+            <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-4xl">
               {slide.title}
             </h2>
           </div>
