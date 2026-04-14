@@ -51,7 +51,7 @@ export default function Carousel() {
     className="object-cover object-top"
   />
           <div className="flex flex-col gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-           <h2 className=" text-white text-center text-4xl font-title font-medium uppercase">
+           <h2 className=" text-white text-center text-4xl megatitle font-medium uppercase">
               {slide.title}
             </h2>
             <p className=" text-white text-center text-[16px] font-fam-parag">

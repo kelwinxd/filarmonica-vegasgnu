@@ -9,13 +9,13 @@
   --main-color:rgb(132, 0, 255);
   --black-color:#080708;
 
-  --width-bullet: 20px !important;
-  --height-bullet: 20px !important;
+  --width-bullet: 30px !important;
+  --height-bullet: 30px !important;
   --bg-bullet: rgb(196, 18, 18) !important;
   --swiper-pagination-bullet-size {
-  size: 20px;
+  size: 30px;
 }
-  --font-title:
+  
 
 
 }
@@ -31,8 +31,13 @@ a,p,h1,h2,h3 {
   --color-bermuda: #78dcca;
   --color-mainblue: #316998;
   --font-fam-parag: font-family: "Space Grotesk", sans-serif;
-  --font-title: font-family: "Unbounded", sans-serif;
+  --font-title: "Unbounded", sans-serif;
+  --text-color-subparag: #535353;
   --text-color-parag: #080708;
+}
+
+.megatitle {
+  font-family: "Unbounded", sans-serif;
 }
 
 @theme inline {
@@ -69,5 +74,5 @@ body {
   opacity: 1 !important;
 }
 --swiper-pagination-bullet-size {
-  size: 20px;
+  size: 30px;
 }
