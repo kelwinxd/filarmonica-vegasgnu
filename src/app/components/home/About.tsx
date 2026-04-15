@@ -45,7 +45,7 @@ const About = () => {
       </div>
 
       {/* About Cards */}
-      <div className="mt-[120px]  mb-[120px] flex flex-col md:flex-row gap-6">
+      <div className="mt-50 md:mt-[120px]  mb-[120px] flex flex-col md:flex-row gap-6">
         <AboutCard title="+100">
           <h2 className="text-[16px] md:text-[20px] text-main font-bold">
             Alunos atendidos

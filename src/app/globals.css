@@ -44,11 +44,11 @@ a,p,h1,h2,h3 {
 
 @layer components {
   .btn-primary {
-    @apply py-2.5 px-5 bg-main font-fam-parag text-white rounded-[6px] hover:bg-mainblue
+    @apply flex justify-center items-center py-2.5 px-5 bg-main font-fam-parag text-white rounded-[6px] hover:bg-mainblue
   }
 
   .btn-secondary {
-    @apply py-2.5 px-5 bg-transparent border border-white font-fam-parag text-white rounded-[6px]
+    @apply flex justify-center items-center py-2.5 px-5 bg-transparent border border-white font-fam-parag text-white rounded-[6px]
   }
 }
 
