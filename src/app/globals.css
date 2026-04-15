@@ -14,7 +14,7 @@
   --height-bullet: 30px !important;
   --bg-bullet: rgb(196, 18, 18) !important;
   
- --swiper-pagination-bullet-size: 18px;
+ --swiper-pagination-bullet-size: 16px !important;
   
 
 
@@ -31,14 +31,28 @@ a,p,h1,h2,h3 {
   --color-main: #084B83;
   --color-btn: #084B83;
   --font-fam-parag: font-family: "Space Grotesk", sans-serif;
+  --font-fam-main: font-family: "Space Grotesk", sans-serif; 
   --font-title: "Unbounded", sans-serif;
   --text-color-subparag: #535353;
   --text-color-parag: #080708;
 
 }
+
 .btn-text {
     font-family: var(--main-font);
 }
+
+@layer components {
+  .btn-primary {
+    @apply py-2.5 px-5 bg-main font-fam-parag text-white rounded-[6px] hover:bg-mainblue
+  }
+
+  .btn-secondary {
+    @apply py-2.5 px-5 bg-transparent border border-white font-fam-parag text-white rounded-[6px]
+  }
+}
+
+
 .megatitle {
   font-family: "Unbounded", sans-serif;
 }
@@ -49,6 +63,8 @@ a,p,h1,h2,h3 {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
