@@ -1,7 +1,9 @@
+import Footer from "../components/Footer"
 import About from "../components/home/About"
 import Carousel from "../components/home/Carousel"
 import CarouselDepoiments from "../components/home/CarouselDepoiments"
 import ContatoSection from "../components/home/ContatoSection"
+import CtaFinal from "../components/home/CtaFinal"
 import Depoimentos from "../components/home/Depoimentos"
 import Events from "../components/home/Events"
 import Header from "../components/home/Header"
@@ -27,6 +29,8 @@ const Home = () => {
         </main>
         <CarouselDepoiments />
         <Depoimentos />
+        <CtaFinal />
+        
         
     </div>
   )

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Button from "./Button"
 import CarouselEvents from "./CarouselEvents"
 
@@ -5,7 +6,7 @@ import CarouselEvents from "./CarouselEvents"
 
 const Events = () => {
   return (
-    <section className="pl-5 md:pl-10 lg:pl-26">
+    <section className="px-5 md:px-10 lg:px-26">
     {/* Eventos */}
     <div className="w-full mt-[60px] mb-[50px]">
         <div className="w-fit h-[39px] p-2.5 bg-[#CDE8FF] flex justify-center items-center">
@@ -23,9 +24,12 @@ const Events = () => {
       </div>
     <CarouselEvents />
     <div className="flex justify-center mt-[60px]">
+      <Link href={`/eventos`}>
+      
     <Button variant="primary">
       Ver mais eventos
     </Button>
+    </Link>
     </div>
 
     </section>

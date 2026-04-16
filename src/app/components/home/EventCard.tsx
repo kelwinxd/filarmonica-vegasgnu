@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import type { EventComponent } from "../../../../types/event";
+import Link from 'next/link';
 
 type EventCardProps = {
   event: EventComponent;
@@ -7,7 +8,7 @@ type EventCardProps = {
 
 function EventCard({ event } : EventCardProps) {
   return (
-    <a href={event.link} className="block">
+    <Link  href={`/eventos/${event.id}`} className="block">
       <div className="rounded-[8px] overflow-hidden shadow-md bg-white">
         {/* imagem */}
         <div className="relative h-[180px]">
@@ -33,12 +34,12 @@ function EventCard({ event } : EventCardProps) {
             {event.date} | {event.time}
           </p>
 
-          <button className="mt-3 bg-mainyellow hover:bg-[#F8D184] px-4 py-2 rounded text-white text-sm cursor-pointer hover:">
+          <button className="mt-3 bg-mainyellow hover:bg-[#F8D184] px-4 py-2 rounded text-blackmain font-medium text-sm cursor-pointer hover:">
             Confira →
           </button>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

@@ -5,43 +5,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import EventCard from "./EventCard";
-import { EventComponent } from "../../../../types/event";
+import { events } from "@/app/data/eventsData";
 
 
-const events : EventComponent[] = [
-  {
-    id: 1,
-    image: "/eventfolder.png",
-    date: "20/08/2026",
-    time: "20h",
-    address: "Teatro Municipal de Americana",
-    link: "#",
-  },
-  {
-    id: 2,
-    image: "/eventfolder2.png",
-    date: "24/08/2026",
-    time: "19h30",
-    address: "Centro Cultural de Santa Bárbara D'Oeste",
-    link: "#",
-  },
-  {
-    id: 3,
-    image: "/eventfolder2.png",
-    date: "20/08/2026",
-    time: "20h",
-    address: "Teatro Municipal de Americana",
-    link: "#",
-  },
-    {
-    id: 4,
-    image: "/eventfolder2.png",
-    date: "20/08/2026",
-    time: "20h",
-    address: "Teatro Municipal de Americana",
-    link: "#",
-  }
-];
+
 
  function CarouselEvents() {
   return (
@@ -53,7 +20,7 @@ const events : EventComponent[] = [
         grabCursor
         pagination={{ clickable: true }}
         navigation={true}
-        className=" !pr-10"
+        className=" !pr-10 !pb-10"
 
        
 

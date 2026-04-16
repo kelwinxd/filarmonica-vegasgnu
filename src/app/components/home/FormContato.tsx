@@ -84,7 +84,7 @@ const FormContato = () => {
       {/* Botão */}
       <button
         type="submit"
-        className="mt-4 bg-main text-white btn-text py-2.5 rounded-[6px] cursor-pointer"
+        className="mt-4 bg-main text-white btn-text py-2.5 rounded-[6px] cursor-pointer hover:brightness-120"
       >
         Enviar
       </button>
