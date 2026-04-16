@@ -29,7 +29,7 @@ import { events } from "@/app/data/eventsData";
         {events.map((event) => (
           <SwiperSlide
             key={event.id}
-            className="!w-[280px] md:!w-[340px] lg:!w-[380px]"
+            className="!w-[300px] !h-auto md:!w-[340px] lg:!w-[380px]"
           >
             <EventCard event={event} />
           </SwiperSlide>
