@@ -30,7 +30,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${bgVariants[variant]} ${textVariants[text]} ${borderVariants[border]} py-2.5 px-5 rounded text-[16px] md:text-[20px] font-medium btn-text w-[225px] h-[46px] flex justify-center items-center cursor-pointer`}
+      className={`${bgVariants[variant]} ${textVariants[text]} ${borderVariants[border]} py-2.5 px-5 rounded text-[16px] md:text-[20px] font-medium btn-text w-full md:w-[225px] h-[46px] flex justify-center items-center cursor-pointer hover:brightness-120`}
     >
       {children}
     </button>

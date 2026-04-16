@@ -1,0 +1,30 @@
+/* container do movimento */
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+/* cada slide */
+.slide-item {
+  flex: 0 0 auto;
+  width: 486px;
+  height: 320px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width:796px) {
+    .slide-item {
+        width: 280px;
+    }
+}
+
+/* animação infinita */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

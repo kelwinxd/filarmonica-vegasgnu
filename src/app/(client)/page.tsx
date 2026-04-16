@@ -1,5 +1,9 @@
 import About from "../components/home/About"
 import Carousel from "../components/home/Carousel"
+import CarouselDepoiments from "../components/home/CarouselDepoiments"
+import ContatoSection from "../components/home/ContatoSection"
+import Depoimentos from "../components/home/Depoimentos"
+import Events from "../components/home/Events"
 import Header from "../components/home/Header"
 import Services from "../components/home/Services"
 
@@ -12,11 +16,17 @@ const Home = () => {
     <Header />
   </div>
   <Carousel />
-        <main className="max-w-full overflow-x-hidden mx-auto px-5 md:px-10 lg:px-26">
+  <Events  />
+        <main className="max-w-full overflow-x-hidden mx-auto">
         
         <About /> 
+        
         <Services />
+        <ContatoSection />
+        
         </main>
+        <CarouselDepoiments />
+        <Depoimentos />
         
     </div>
   )

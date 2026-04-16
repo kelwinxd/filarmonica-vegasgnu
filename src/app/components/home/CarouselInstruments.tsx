@@ -1,8 +1,12 @@
 "use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import Image from 'next/image'
+import { Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
+
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const slides = [
   { id: 1, image: "/card-inst.png", href: "#" },
@@ -11,31 +15,22 @@ const slides = [
   { id: 4, image: "/card-inst.png", href: "#" },
 ];
 
-const loopedSlides = [...slides, ...slides, ...slides];
-
 const CarouselInstruments = () => {
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-full relative">
       <Swiper
-        modules={[Autoplay]}
+           modules={[Navigation, Pagination]}
         slidesPerView={"auto"}
         spaceBetween={16}
-        loop={true}
-      
-        loopAdditionalSlides={slides.length}
-        speed={6000}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        grabCursor={true}
-        className="!pl-4"
+        grabCursor
+        pagination={{ clickable: true }}
+        navigation={true}
+        className=" !pr-10"
       >
-        {loopedSlides.map((slide, index) => (
+        {slides.map((slide) => (
           <SwiperSlide
-            key={index}
-            className="!w-[307.2px] md:!w-[384px]"
+            key={slide.id}
+            className="!w-[85%] sm:!w-[300px] md:!w-[360px] lg:!w-[384px]"
           >
             <a href={slide.href} className="block">
               <div className="rounded-[8px] h-[400px] md:h-[500px] relative overflow-hidden shadow-md">
@@ -43,7 +38,7 @@ const CarouselInstruments = () => {
                   src={slide.image}
                   alt=""
                   fill
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                 />
               </div>
             </a>

@@ -5,7 +5,7 @@ import CarouselInstruments from "./CarouselInstruments";
 
 const About = () => {
   return (
-    <div className="mt-25.5 ">
+    <div className="mt-20 px-5 md:px-10 lg:px-26 ">
 
       {/* Texto Quem Somos */}
       <div className="w-full">
@@ -23,12 +23,12 @@ const About = () => {
         </p>
       </div>
 
-        {/* Story */}
+      {/* Story */}
         <div className="mt-[72px] flex flex-col md:flex-row gap-6 ">
           <div className="flex-1 ">
             <p className="text-subparag text-[20px] font-medium">Fundado em junho de 2022, o projeto nasceu da parceria entre o Espaço Gnu e a Vegas Card, com o objetivo de ampliar o acesso à educação musical e gerar impacto social por meio da cultura. Ao longo de sua atuação, a iniciativa vem se consolidando como um espaço de aprendizado, inclusão e desenvolvimento, atendendo crianças, adolescentes e adultos em um ambiente estruturado e acolhedor</p>
 
-            <div className="flex flex-col md:flex-row gap-6 mt-[35px]">
+            <div className="flex flex-col items-center lg:place-items-end md:flex-row gap-6 mt-[34px] lg:mt-[64px]">
               <Button variant="secondary" text="dark" border="outline">
                 Quero ser Parceiro
               </Button>
@@ -44,8 +44,8 @@ const About = () => {
           </div>
         </div>
 
-        {/* About Cards */}
-        <div className="mt-[120px]  mb-[120px] flex flex-col md:flex-row gap-6">
+      {/* About Cards */}
+        <div className="mt-[120px] mb-[120px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <AboutCard title="+100">
             <h2 className="text-[16px] md:text-[20px] text-main font-bold">
               Alunos atendidos

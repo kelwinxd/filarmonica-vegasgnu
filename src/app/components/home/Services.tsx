@@ -3,8 +3,11 @@ import CarouselInstruments from './CarouselInstruments'
 
 const Services = () => {
   return (
-    <>
-     {/* Instruments */}
+
+     
+     <section className="pl-5 md:pl-10 lg:pl-26 ">
+
+    
     <div>
        <div className="w-fit h-[39px] p-2.5 bg-[#CDE8FF] flex justify-center items-center">
       <h1 className=" text-[15px] uppercase font-medium text-[#080708] megatitle"> Instrumentos que Ensinamos</h1>
@@ -18,11 +21,11 @@ const Services = () => {
         </p>
       </div>
        {/* Carrossel Instruments */}
-      <div className="mt-[72px]">
+      <div className="mt-[72px] mb-[72px]">
         <CarouselInstruments />
       </div>
-
-    </>
+ </section>
+  
   )
 }
 
