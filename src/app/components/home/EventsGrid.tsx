@@ -31,27 +31,31 @@ const EventsGrid = () => {
   */
   return (
     <section className="w-full">
-       <div className="flex justify-between items-center mb-10 ">
+       <div className="flex flex-col items-start lg:flex-row justify-between items-center mb-10 ">
       <h1 className=" text-[16px] md:text-[24px] font-medium text-[#080708] megatitle">Encontre Eventos</h1>
-      <div className="flex gap-3 w-[50%]">
-        <input           className="flex-2 mt-1 text-subparag bg-white border-2 border-[#D4D4D4] rounded-[6px] px-3 py-2 "
- type="text" name="" value={search} onChange={(e) => setSearch(e.target.value)} id="" />
-      <select className="flex-1 mt-1 text-subparag bg-white border-2 border-[#D4D4D4] rounded-[6px] px-3 py-2">
-  <option value="">Todos os meses</option>
-  <option value="01">Janeiro</option>
-  <option value="02">Fevereiro</option>
-  <option value="03">Março</option>
-  <option value="04">Abril</option>
-  <option value="05">Maio</option>
-  <option value="06">Junho</option>
-  <option value="07">Julho</option>
-  <option value="08">Agosto</option>
-  <option value="09">Setembro</option>
-  <option value="10">Outubro</option>
-  <option value="11">Novembro</option>
-  <option value="12">Dezembro</option>
-</select>
-      </div>
+      <div className="flex gap-3 w-full lg:w-[50%] overflow-hidden">
+  <input
+    className="flex-1 min-w-0 mt-1 text-subparag bg-white border-2 border-[#D4D4D4] rounded-[6px] px-3 py-2"
+    type="text"
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
+  <select className="flex-1 min-w-0 mt-1 text-subparag bg-white border-2 border-[#D4D4D4] rounded-[6px] px-3 py-2">
+    <option value="">Todos os meses</option>
+    <option value="01">Janeiro</option>
+    <option value="02">Fevereiro</option>
+    <option value="03">Março</option>
+    <option value="04">Abril</option>
+    <option value="05">Maio</option>
+    <option value="06">Junho</option>
+    <option value="07">Julho</option>
+    <option value="08">Agosto</option>
+    <option value="09">Setembro</option>
+    <option value="10">Outubro</option>
+    <option value="11">Novembro</option>
+    <option value="12">Dezembro</option>
+  </select>
+</div>
      </div>
       
       <div className="
