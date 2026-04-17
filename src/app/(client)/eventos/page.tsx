@@ -4,7 +4,7 @@ import CarouselEvents from "@/app/components/home/CarouselEvents";
 import CtaFinal from "@/app/components/home/CtaFinal";
 import Events from "@/app/components/home/Events";
 import EventsGrid from "@/app/components/home/EventsGrid";
-import Header from "@/app/components/home/Header";
+import Header from "@/app/components/Header";
 
 
 export default function Page(){

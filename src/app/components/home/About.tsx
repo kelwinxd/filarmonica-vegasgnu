@@ -5,7 +5,7 @@ import CarouselInstruments from "./CarouselInstruments";
 
 const About = () => {
   return (
-    <div className="mt-20 px-5 md:px-10 lg:px-26 ">
+    <div className="mt-20 px-5 md:px-10 lg:px-26 " id="sobre">
 
       {/* Texto Quem Somos */}
       <div className="w-full">

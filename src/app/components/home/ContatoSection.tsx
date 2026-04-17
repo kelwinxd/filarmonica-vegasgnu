@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ContatoSection = () => {
   return (
-    <section className="w-full mb-[60px]">
+    <section className="w-full mb-[60px]" id="forms">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row rounded-[8px] overflow-hidden">
 
         {/* Imagem */}

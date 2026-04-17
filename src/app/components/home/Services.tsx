@@ -5,7 +5,7 @@ const Services = () => {
   return (
 
      
-     <section className=" px-5 md:px-10 lg:px-26 ">
+     <section className=" px-5 md:px-10 lg:px-26 " id="cursos">
 
     
     <div>

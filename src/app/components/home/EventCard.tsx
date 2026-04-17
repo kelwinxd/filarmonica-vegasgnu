@@ -18,9 +18,9 @@ function EventCard({ event } : EventCardProps) {
     {/* conteúdo */}
     <div className="p-4 flex flex-col flex-1 bg-white">
       <h3 className="font-medium uppercase text-sm md:text-lg text-blackmain megatitle">
-        Grande Concerto
+        {event.title}
       </h3>
-      <p className="text-sm text-subparag">{event.address}</p>
+      <p className="text-sm text-subparag">{event.place}</p>
       <p className="text-sm font-medium text-subparag">
         {event.date} | {event.time}
       </p>

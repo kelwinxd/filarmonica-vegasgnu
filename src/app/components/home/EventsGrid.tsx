@@ -1,10 +1,58 @@
 
+"use client"
 import { events } from "@/app/data/eventsData";
 import EventCard from "./EventCard";   // ajusta o caminho
+import { EventComponent } from "../../../../types/event";
+import { useEffect, useState } from "react";
 
 const EventsGrid = () => {
+   const [allEvents, setAllEvents] = useState<EventComponent[]>(events) // 👈 fonte original
+  const [search, setSearch] = useState("")
+
+  // 👇 ainda derivado, mas agora da lista que virá da API
+  const listEvents = search.trim() === ""
+    ? allEvents
+    : allEvents.filter((event) => {
+        const word = search.toLowerCase()
+        return (
+          event.title.toLowerCase().includes(word) ||
+          event.place.toLowerCase().includes(word) ||
+          event.address.city.toLowerCase().includes(word)
+        )
+      })
+
+  // 👇 quando vier a API, só muda aqui
+  /*
+  useEffect(() => {
+    fetch("/api/events")
+      .then((res) => res.json())
+      .then((data) => setAllEvents(data)) // popula a fonte original
+  }, [])
+  */
   return (
     <section className="w-full">
+       <div className="flex justify-between items-center mb-10 ">
+      <h1 className=" text-[16px] md:text-[24px] font-medium text-[#080708] megatitle">Encontre Eventos</h1>
+      <div className="flex gap-3 w-[50%]">
+        <input           className="flex-2 mt-1 text-subparag bg-white border-2 border-[#D4D4D4] rounded-[6px] px-3 py-2 "
+ type="text" name="" value={search} onChange={(e) => setSearch(e.target.value)} id="" />
+      <select className="flex-1 mt-1 text-subparag bg-white border-2 border-[#D4D4D4] rounded-[6px] px-3 py-2">
+  <option value="">Todos os meses</option>
+  <option value="01">Janeiro</option>
+  <option value="02">Fevereiro</option>
+  <option value="03">Março</option>
+  <option value="04">Abril</option>
+  <option value="05">Maio</option>
+  <option value="06">Junho</option>
+  <option value="07">Julho</option>
+  <option value="08">Agosto</option>
+  <option value="09">Setembro</option>
+  <option value="10">Outubro</option>
+  <option value="11">Novembro</option>
+  <option value="12">Dezembro</option>
+</select>
+      </div>
+     </div>
       
       <div className="
         grid 
@@ -13,9 +61,11 @@ const EventsGrid = () => {
         lg:grid-cols-3 
         gap-6
       ">
-        {events.map((event) => (
+        {listEvents && listEvents.map((event) => (
           <EventCard key={event.id} event={event} />
         ))}
+
+        {listEvents == null && <p className="text-[24px] font-medium text-blackmain">Nenhum Evento encontrado</p>}
       </div>
 
     </section>

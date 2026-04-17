@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import Button from "./Button"
 import CarouselEvents from "./CarouselEvents"
@@ -5,9 +6,13 @@ import CarouselEvents from "./CarouselEvents"
 
 
 const Events = () => {
+
+  
   return (
     <section className="px-5 md:px-10 lg:px-26">
     {/* Eventos */}
+
+    
     <div className="w-full mt-[60px] mb-[50px]">
         <div className="w-fit h-[39px] p-2.5 bg-[#CDE8FF] flex justify-center items-center">
       <h1 className=" text-[15px] uppercase font-medium text-[#080708] megatitle">Próximos eventos</h1>

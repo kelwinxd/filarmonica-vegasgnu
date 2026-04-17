@@ -63,7 +63,7 @@ export default function Carousel() {
         speed={900}
         className="w-full"
         pagination={{ clickable: true }}
-       
+     id="hero"  
     >
       
       {slides.map((slide) => (

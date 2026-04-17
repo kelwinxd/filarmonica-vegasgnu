@@ -25,7 +25,7 @@ const CarouselInstruments = () => {
         grabCursor
         pagination={{ clickable: true }}
         navigation={true}
-        className=" !pr-10"
+        className=" !pr-10 !pb-10"
       >
         {slides.map((slide) => (
           <SwiperSlide
