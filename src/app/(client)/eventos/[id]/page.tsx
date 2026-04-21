@@ -22,10 +22,14 @@ export default async function EventPage({ params }: Props) {
 
   return (
     <div className="bg-white">
-        <div className="w-full relative h-[70vh]">
-            <Image src={event.image} width={1440} height={620} className="object-cover h-full" alt="" />
-        </div>
-
+     <div className="relative w-full h-[70vh] overflow-hidden">
+  <Image
+    src={event.image}
+    alt=""
+    fill
+    className="object-cover object-center"
+  />
+</div>
 
         <div className="px-5 md:px-10 lg:px-26">
 
