@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import Link from 'next/link'
 
 const CtaFinal = () => {
   return (
@@ -9,9 +10,11 @@ const CtaFinal = () => {
         <span className="text-main">Tem interesse no projeto?</span> Estamos prontos para te atender
         </h2>
 
+        <Link href="/contato">
         <Button variant="primary">
             Entrar em Contato
         </Button>
+        </Link>
         </div>
         
     </section>

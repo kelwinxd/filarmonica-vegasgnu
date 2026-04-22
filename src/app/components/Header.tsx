@@ -7,6 +7,13 @@ const Header = () => {
 
   const [open, setOpen] = useState(false)
   const headerRef = useRef<HTMLElement>(null)
+  const handleClose = () => {
+    setTimeout(() => {
+      setOpen(false)
+    }, 700);
+  }
+
+
 
    useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -42,45 +49,45 @@ const Header = () => {
 
     </div>
     
-               {/* DROPDOWN ANIMADO */}
-      <div
-        className={`
-          transition-all duration-300 ease-in-out mt-[-8px] 
-          overflow-hidden bg-black  px-[22px] rounded-b-[8px]
-          ${open ? "max-h-fit md:max-h-70 opacity-100" : "max-h-0 opacity-0"}
-        `}
-      >
-        <div className="bg-[#7C7D7D] w-full h-0.5 mb-3 mt-2.5"></div>
-        <div className="flex flex-col md:flex-row gap-8">
+             {/* DROPDOWN ANIMADO */}
+<div
+ onClick={handleClose} 
+  className={`
+    transition-all duration-300 ease-in-out mt-[-8px] 
+    overflow-hidden bg-black px-[22px] rounded-b-[8px]
+    ${open ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}
+  `}
+>
+  <div className="bg-[#7C7D7D] w-full h-0.5 mb-3 mt-2.5"></div>
+  <div className="flex flex-col gap-2 md:flex-row md:gap-8">
 
-      
+    <ul className="flex-1 text-white flex flex-col gap-2 px-4.5 py-2.5 mb-4 bg-[#181618] rounded-[8px]">
+    
+      <li className="border-b border-gray-800 "><Link href="/#hero">Home</Link></li>
+      <li className="border-b border-gray-800 mt-2"><Link href="/#sobre">Sobre nós</Link></li>
+      <li className="border-b border-gray-800 mt-2"><Link href="/#cursos">Cursos</Link></li>
+      <li className="mt-2"><Link href="/#eventos">Eventos</Link></li>
+    </ul>
+
+    <ul className="flex-1 text-white flex flex-col justify-between px-4.5 py-2.5 mb-4 rounded-[8px]">
+      <div className="flex flex-col gap-2">
         
-        <ul className="flex-1 text-white flex flex-col gap-2 px-4.5 py-2.5 mb-4 bg-[#181618] rounded-[8px] h-54">
-        <p>Explorar</p>
-        <li className="border-b border-gray-700"><a href="#hero" className="hover:text-white">Home</a></li>
-        <li className="border-b border-gray-700"><a href="#sobre" className="hover:text-white">Sobre nós</a></li>
-        <li className="border-b border-gray-700"><a href="#cursos" className="hover:text-white">Cursos</a></li>
-        <li className="border-b border-gray-700"><a href="#forms" className="hover:text-white">Quero participar</a></li>
-        <li className="border-b border-gray-700"><a href="#" className="hover:text-white">Contato</a></li>
-        </ul>
-
-        <ul className="flex-1 text-white flex flex-col justify-between px-4.5 py-2.5 mb-4 rounded-[8px] h-54">
-          <div className="flex flex-col gap-2">
- <p>Explorar</p>
-        <li className="border-b border-gray-700"><a href="#hero" className="hover:text-white">Quero Participar</a></li>
-        <li className="border-b border-gray-700"><a href="#sobre" className="hover:text-white">Contato</a></li>
-          </div>
-       
-        <div className="flex flex-col gap-4">
-          <p>Redes Sociais</p>
-             <div className=" hidden lg:flex gap-6">
-                              <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
-                              <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
-                              </div>
-        </div>
-      </ul>
-          </div>
+        <li className="border-b border-gray-700 mt-2"><Link href="/#forms">Quero Participar</Link></li>
+        <li className="border-b border-gray-700 mt-2"><a href="/contato">Contato</a></li>
       </div>
+
+      <div className="flex flex-col gap-4 mt-4">
+        <p>Redes Sociais</p>
+    
+        <div className="flex gap-6">
+          <Image alt="Facebook" src="/icons/facebook.png" width={26} height={26}/>
+          <Image alt="Instagram" src="/icons/instagram.png" width={26} height={26}/>
+        </div>
+      </div>
+    </ul>
+
+  </div>
+</div>
          
     </header>
   )

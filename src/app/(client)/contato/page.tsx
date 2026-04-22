@@ -29,18 +29,18 @@ const Page = () => {
         
         <div className="mt-40 mb-14 flex flex-col items-center">
             <h1 className="text-3xl text-blackmain mb-10 font-medium">Contate-nos</h1>
-            <div className="flex flex-col md:flex-row w-full gap-4">
-               <div className="flex-1">
+            <div className="flex flex-col md:flex-row justify-between w-full  lg:w-[792px] gap-4">
+               <div className="">
                 <h2 className="mb-4 text-sm md:text-[20px] font-medium text-blackmain">Telefone</h2>
                 <p className="text-subparag font-medium">+55 19 2108-2900</p>
             </div>
 
-             <div className="flex-1">
+             <div className="">
                 <h2 className="mb-4 text-sm md:text-[20px] font-medium text-blackmain">Email</h2>
                 <p className="text-subparag font-medium">atendimento@vegascard.com.br</p>
             </div>
 
-             <div className="flex-1">
+             <div className="">
                 <h2 className="mb-4 text-sm md:text-[20px] font-medium text-blackmain">Redes Sociais</h2>
                  <div className="flex gap-6 relative">
                                     <Image alt="redesocial" src="/icons/insta-icon-black.png" width={26} height={26}/>
@@ -53,7 +53,7 @@ const Page = () => {
 
         <div className="bg-[#F1F1F1] px-10 py-10 flex flex-col items-center justify-center rounded-[8px] mb-14">
             <div className=" w-full max-w-175 mb-7">
-                <h1 className="megatitle text-blackmain font-medium text-left text-[24px] lg:text-4xl mb-5">Entre em contato com a gente</h1>
+                <h1 className="megatitle text-blackmain font-medium text-left text-[24px] lg:text-3xl mb-5">Entre em contato com a gente</h1>
 
                 <p className="text-subparag text-sm md:text-[16px] font-medium w-[80%]">
                     Estamos à disposição para tirar dúvidas, receber inscrições ou  conversar sobre formas de apoio ao projeto. Preencha o formulário ou utilize nossos canais de atendimento.

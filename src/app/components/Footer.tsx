@@ -20,7 +20,7 @@ const Footer = () => {
 
                     <div className=" hidden lg:flex gap-6">
                     <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
-                    <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
+                    <Image alt="redesocial" src="/icons/instagram.png" width={26} height={26}/>
                     </div>
                   
                 </div>
@@ -30,10 +30,10 @@ const Footer = () => {
                     <div>
       <h3 className="font-semibold mb-4">Links rápidos</h3>
       <ul className="space-y-2 text-gray-300">
-        <li><a href="#hero" className="hover:text-white">Home</a></li>
-        <li><a href="#sobre" className="hover:text-white">Sobre nós</a></li>
-        <li><a href="#cursos" className="hover:text-white">Cursos</a></li>
-        <li><a href="#forms" className="hover:text-white">Quero participar</a></li>
+        <li><Link href="/#hero" className="hover:text-white">Home</Link></li>
+        <li><Link href="/#sobre" className="hover:text-white">Sobre nós</Link></li>
+        <li><Link href="/#cursos" className="hover:text-white">Cursos</Link></li>
+        <li><Link href="/#forms" className="hover:text-white">Quero participar</Link></li>
         <li><Link href="/contato" className="hover:text-white">Contato</Link></li>
       </ul>
     </div>
@@ -51,7 +51,7 @@ const Footer = () => {
 
      <div className="flex lg:hidden gap-6 relative">
                     <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
-                    <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
+                    <Image alt="redesocial" src="/icons/instagram.png" width={26} height={26}/>
                     </div>
                 </div>
             </div>
