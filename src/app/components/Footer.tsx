@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ const Footer = () => {
         <li><a href="#sobre" className="hover:text-white">Sobre nós</a></li>
         <li><a href="#cursos" className="hover:text-white">Cursos</a></li>
         <li><a href="#forms" className="hover:text-white">Quero participar</a></li>
-        <li><a href="#" className="hover:text-white">Contato</a></li>
+        <li><Link href="/contato" className="hover:text-white">Contato</Link></li>
       </ul>
     </div>
 

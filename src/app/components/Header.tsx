@@ -36,9 +36,9 @@ const Header = () => {
             <Image src="/logo-preto.png" alt="logo" width={82} height={52} className="w-20.5 h-13"/>
         </Link>
 
-        <a href="#contato" className="flex items-center justify-center text-white rounded-[6px] p-2.5 w-[83px] h-10 bg-[#316998] hover:brightness-120">
+        <Link href="/contato" className="flex items-center justify-center text-white rounded-[6px] p-2.5 w-[83px] h-10 bg-[#316998] hover:brightness-120">
                 Contato
-            </a>
+            </Link>
 
     </div>
     

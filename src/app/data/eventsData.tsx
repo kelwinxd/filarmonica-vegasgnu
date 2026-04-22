@@ -25,7 +25,7 @@ export const events : EventComponent[] = [
   id: 2,
   title: "Titulo Evento 2",
   image: "/eventfolder2.png",
-  date: "24/08/2026",
+  date: "24/01/2026",
   time: "19h30",
   place: "Estação Cultural da Fundação Romi",
   address: {
@@ -45,7 +45,7 @@ export const events : EventComponent[] = [
   id: 3,
   title: "Titulo Evento 3",  // adicionado
   image: "/eventfolder.png",
-  date: "20/08/2026",
+  date: "20/04/2026",
   time: "20h",
   place: "Teatro Municipal Lulu Benencase",
   address: {
