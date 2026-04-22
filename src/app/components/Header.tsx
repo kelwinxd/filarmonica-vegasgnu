@@ -34,7 +34,7 @@ const Header = () => {
         className={`
           transition-all duration-300 ease-in-out mt-[-8px] 
           overflow-hidden bg-black  px-[22px] rounded-b-[8px]
-          ${open ? "max-h-70 opacity-100" : "max-h-0 opacity-0"}
+          ${open ? "max-h-fit md:max-h-70 opacity-100" : "max-h-0 opacity-0"}
         `}
       >
         <div className="bg-[#7C7D7D] w-full h-0.5 mb-3 mt-2.5"></div>
