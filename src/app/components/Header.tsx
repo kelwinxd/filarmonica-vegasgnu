@@ -38,7 +38,7 @@ const Header = () => {
         `}
       >
         <div className="bg-[#7C7D7D] w-full h-0.5 mb-3 mt-2.5"></div>
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
 
       
         
