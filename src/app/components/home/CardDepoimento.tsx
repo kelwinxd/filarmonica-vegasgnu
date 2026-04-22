@@ -14,7 +14,7 @@ const CardDepoimento = ({
   avatar,
 }: CardDepoimentoProps) => {
   return (
-    <div className="bg-[#f5f5f5] rounded-lg border-1 border-gray-200 p-6 flex flex-col justify-between h-full">
+    <div className="bg-[#ffffff] rounded-lg border-1 border-gray-200 p-6 flex flex-col justify-between h-full">
 
       {/* Aspas */}
       <div className="mb-4">
@@ -28,7 +28,7 @@ const CardDepoimento = ({
       </div>
 
       {/* Texto */}
-      <p className="text-subparag text-[20px] leading-relaxed mb-6">
+      <p className="text-subparag font-medium text-[18px] leading-5 mb-6">
         {text}
       </p>
 

@@ -9,10 +9,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const slides = [
-  { id: 1, image: "/card-inst.png", href: "#" },
-  { id: 2, image: "/card-inst.png", href: "#" },
-  { id: 3, image: "/card-inst.png", href: "#" },
-  { id: 4, image: "/card-inst.png", href: "#" },
+  { id: 1, image: "/trompete-1.png", href: "#" },
+  { id: 2, image: "/trombone-1.png", href: "#" },
+  { id: 3, image: "/trompa-1.png", href: "#" },
+  { id: 4, image: "/bombardino-1.png", href: "#" },
 ];
 
 const CarouselInstruments = () => {

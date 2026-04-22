@@ -7,10 +7,10 @@ const Header = () => {
 
   const [open, setOpen] = useState(false)
   return (
-    <header className="mt-[24px] h-[64px] w-full max-w-[792px]  bg-black rounded-[8px] mx-auto  py-[6px] relative" >
+    <header className="mt-[24px] h-[64px] w-full max-w-[792px]  bg-black rounded-[8px] mx-auto relative" >
      
-    <div className="flex justify-between items-center px-[22px]">
-        <div className="flex gap-1 h-full items-center" onClick={() => setOpen(prev => !prev)}>
+    <div className="flex justify-between items-center px-[22px] py-1">
+        <div className="flex gap-1 h-full items-center cursor-pointer" onClick={() => setOpen(prev => !prev)}>
           {open ? <Image src="/icons/close.png" alt="" width={20} height={20} className=" h-6 w-6" /> : <Image src="/hamb-menu.svg"  alt="" width={20} height={20} className=" h-6 w-6" /> }
             
             <span className="text-[16px]">Menu</span>
@@ -32,18 +32,41 @@ const Header = () => {
                {/* DROPDOWN ANIMADO */}
       <div
         className={`
-          transition-all duration-300 ease-in-out
-          overflow-hidden bg-black px-[22px] rounded-b-[8px]
-          ${open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}
+          transition-all duration-300 ease-in-out mt-[-8px] 
+          overflow-hidden bg-black  px-[22px] rounded-b-[8px]
+          ${open ? "max-h-70 opacity-100" : "max-h-0 opacity-0"}
         `}
       >
-        <ul className="text-white flex flex-col gap-2 pb-4">
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Serviços</li>
-          <li>Projetos</li>
-          <li>Contato</li>
+        <div className="bg-[#7C7D7D] w-full h-0.5 mb-3 mt-2.5"></div>
+        <div className="flex gap-8">
+
+      
+        
+        <ul className="flex-1 text-white flex flex-col gap-2 px-4.5 py-2.5 mb-4 bg-[#181618] rounded-[8px] h-54">
+        <p>Explorar</p>
+        <li className="border-b border-gray-700"><a href="#hero" className="hover:text-white">Home</a></li>
+        <li className="border-b border-gray-700"><a href="#sobre" className="hover:text-white">Sobre nós</a></li>
+        <li className="border-b border-gray-700"><a href="#cursos" className="hover:text-white">Cursos</a></li>
+        <li className="border-b border-gray-700"><a href="#forms" className="hover:text-white">Quero participar</a></li>
+        <li className="border-b border-gray-700"><a href="#" className="hover:text-white">Contato</a></li>
         </ul>
+
+        <ul className="flex-1 text-white flex flex-col justify-between px-4.5 py-2.5 mb-4 rounded-[8px] h-54">
+          <div className="flex flex-col gap-2">
+ <p>Explorar</p>
+        <li className="border-b border-gray-700"><a href="#hero" className="hover:text-white">Quero Participar</a></li>
+        <li className="border-b border-gray-700"><a href="#sobre" className="hover:text-white">Contato</a></li>
+          </div>
+       
+        <div className="flex flex-col gap-4">
+          <p>Redes Sociais</p>
+             <div className=" hidden lg:flex gap-6">
+                              <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
+                              <Image alt="redesocial" src="/icons/facebook.png" width={26} height={26}/>
+                              </div>
+        </div>
+      </ul>
+          </div>
       </div>
          
     </header>

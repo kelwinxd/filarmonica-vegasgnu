@@ -4,24 +4,24 @@ import CardDepoimento from './CardDepoimento';
 const depoimentos = [
   {
     id: 1,
-    text: "Eu nunca tinha tocado um instrumento antes...",
+    text: "Eu nunca tinha tocado um instrumento antes. Hoje já consigo tocar e me apresentar, é incrível.",
     name: "Lucas Oliveira",
     role: "Aluno",
     avatar: "/avatar1.png",
   },
   {
     id: 2,
-    text: "É gratificante ver a evolução dos alunos...",
+    text: "É gratificante ver a evolução dos alunos, tanto na música quanto no comportamento.",
     name: "Carlos Mendes",
     role: "Professor",
-    avatar: "/avatar1.png",
+    avatar: "/avatar2.png",
   },
   {
     id: 3,
-    text: "O projeto vai muito além da música...",
+    text: "O projeto vai muito além da música. Ele ajuda no desenvolvimento pessoal das crianças.",
     name: "Juliana Rocha",
     role: "Mãe de aluna",
-    avatar: "/avatar1.png",
+    avatar: "/avatar3.png",
   },
 ];
 

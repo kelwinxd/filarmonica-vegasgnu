@@ -1,4 +1,15 @@
+"use client"
+
+import { useState } from "react";
+
 const FormContato = () => {
+  const [serAluno, setSerAluno] = useState(true)
+
+  
+  const selected = "bg-[#CDE8FF] border-2 border-[#084B83]"
+  const notSelected = "bg-[#F8F8F8] border-2 border-[#D4D4D4]"
+  
+
   return (
     <form className="flex flex-col gap-4">
 
@@ -13,15 +24,19 @@ const FormContato = () => {
       {/* Tipo */}
       <div className="flex gap-2 mt-2">
         <button
+          onClick={() => setSerAluno(true)}
           type="button"
-          className="px-3 py-1.5 lg:px-6 lg:py-3.5 border-2 border-[#D4D4D4] rounded-[6px] text-blackmain text-[12px] lg:text-[16px] btn-text font-medium cursor-pointer"
+          id="ser-aluno"
+          className={`${serAluno ? selected : notSelected} px-3 py-1.5 lg:px-6 lg:py-3.5 rounded-[6px] text-blackmain text-[12px] lg:text-[16px] btn-text font-medium cursor-pointer`}
         >
           Quero ser aluno
         </button>
 
         <button
+           onClick={() => setSerAluno(false)}
           type="button"
-          className="px-3 py-1.5 lg:px-6 lg:py-3.5 border-2 rounded-[6px] border-[#D4D4D4] text-blackmain text-[12px] lg:text-[16px] btn-text font-medium cursor-pointer"
+          id="apoiar-projeto"
+       className={`${serAluno ? notSelected : selected} px-3 py-1.5 lg:px-6 lg:py-3.5 rounded-[6px] text-blackmain text-[12px] lg:text-[16px] btn-text font-medium cursor-pointer`}
         >
           Quero apoiar o projeto
         </button>
