@@ -18,10 +18,10 @@ const Events = () => {
       <h1 className=" text-[15px] uppercase font-medium text-[#080708] megatitle">Próximos eventos</h1>
     </div>
 
-     <div className="flex gap-[41px] mt-[46px]">
+     <div className="flex gap-8 md:gap-10 mt-[46px]">
         <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-3xl md:text-4xl text-parag">
-          Confira nossa programação e participe dos próximos momentos do projeto.
+        <p className="text-2xl md:text-3xl font-medium text-parag">
+          Confira nossa programação e <span className="text-mainblue">participe dos próximos momentos</span> do projeto.
         </p>
     </div>
   

@@ -16,8 +16,8 @@ const Services = () => {
 
       <div className="flex gap-[41px] mt-[46px]">
         <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-3xl md:text-4xl text-parag">
-          Conheça os instrumentos de metais que fazem parte do nosso projeto e descubra qual combina com você.
+        <p className="text-3xl md:text-3xl font-medium text-parag">
+          Conheça os <span className="text-mainblue">instrumentos de metais</span> que fazem parte do nosso projeto e descubra <span className="text-mainblue">qual combina com você.</span>
         </p>
       </div>
        {/* Carrossel Instruments */}

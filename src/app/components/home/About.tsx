@@ -16,10 +16,10 @@ const About = () => {
       
       </div>
       {/* Quem Somos */}
-      <div className="flex gap-[41px] mt-[46px]">
+      <div className="flex  gap-8 md:gap-10 mt-[46px]">
         <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-3xl md:text-4xl text-parag">
-          A Filarmônica de Metais Gnu/Vegas é um projeto social que oferece ensino gratuito de instrumentos de metais, promovendo desenvolvimento musical e humano.
+        <p className="text-2xl md:text-3xl font-medium text-parag">
+          A Filarmônica de Metais Gnu/Vegas é um projeto social que oferece <span className="text-mainblue">ensino gratuito de instrumentos de metais</span>, promovendo desenvolvimento musical e humano.
         </p>
       </div>
 

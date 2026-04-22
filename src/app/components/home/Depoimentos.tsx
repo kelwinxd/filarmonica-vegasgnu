@@ -31,16 +31,16 @@ const Depoimentos = () => {
           {/* Texto Quem Somos */}
       <div className="w-full">
         <div className="w-[153px] h-[39px] p-2.5 bg-[#CDE8FF] flex justify-center items-center">
-      <h1 className=" text-[15px] uppercase font-medium text-[#080708] megatitle">QUEM SOMOS</h1>
+      <h1 className=" text-[15px] uppercase font-medium text-[#080708] megatitle">DEPOIMENTOS</h1>
         </div>
   
       
       </div>
       {/* Quem Somos */}
-      <div className="flex gap-[41px] mt-[46px]">
+      <div className="flex  gap-8 md:gap-10 mt-[46px]">
         <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-3xl md:text-4xl text-parag">
-          A Filarmônica de Metais Gnu/Vegas é um projeto social que oferece ensino gratuito de instrumentos de metais, promovendo desenvolvimento musical e humano.
+        <p className="text-2xl md:text-3xl font-medium text-parag">
+          Acompanhe <span className="text-main">relatos reais</span> de quem vive a experiência da filarmônica no dia a dia
         </p>
       </div>
 
