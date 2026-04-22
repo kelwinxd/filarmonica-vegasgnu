@@ -1,13 +1,26 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Header = () => {
 
   const [open, setOpen] = useState(false)
+  const headerRef = useRef<HTMLElement>(null)
+
+   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+        setOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   return (
-    <header className="mt-[24px] h-[64px] w-full max-w-[792px]  bg-black rounded-[8px] mx-auto relative" >
+    <header ref={headerRef} className="z-30 mt-[24px] h-[64px] w-full max-w-[792px]  bg-black rounded-[8px] mx-auto relative" >
      
     <div className="flex justify-between items-center px-[22px] py-1">
         <div className="flex gap-1 h-full items-center cursor-pointer" onClick={() => setOpen(prev => !prev)}>

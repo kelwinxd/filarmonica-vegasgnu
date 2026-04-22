@@ -24,9 +24,13 @@ html {
 
 }
 
-a,p,h1,h2,h3, label, input[type="text"] {
+a,p,h1,h2,h3, label, input[type="text"], input[type="email"], textarea {
    font-family: "Space Grotesk", sans-serif;
    
+}
+
+textarea {
+     font-family: "Space Grotesk", sans-serif !important;
 }
 
 @theme {
@@ -37,7 +41,7 @@ a,p,h1,h2,h3, label, input[type="text"] {
   --color-mainyellow: #F6C15A;
   --color-hmainyellow:#F8D184;
   --font-fam-parag: font-family: "Space Grotesk", sans-serif;
-  --font-fam-main: font-family: "Space Grotesk", sans-serif; 
+  --font-fam-main:"Space Grotesk", sans-serif; 
   --font-famain: font-family: "Space Grotesk", sans-serif;
   --font-title: "Unbounded", sans-serif;
   --text-color-subparag: #535353;
@@ -45,8 +49,10 @@ a,p,h1,h2,h3, label, input[type="text"] {
 
 }
 
-.btn-text {
-    font-family: var(--main-font);
+
+
+.btn-text, .label-text{
+    font-family: var(--main-font) !important;
 }
 
 @layer components {

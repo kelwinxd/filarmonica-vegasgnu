@@ -11,7 +11,7 @@ export default function HomeLayout({
   return (
   
       <div className="bg-white w-full min-h-screen relative">
-          <div className="absolute top-4 left-0 w-full z-10 flex justify-center px-8 lg:p-0">
+          <div className="z-40 absolute top-4 left-0 w-full flex justify-center px-8 lg:p-0">
             <Header />
           </div>
         {children}
