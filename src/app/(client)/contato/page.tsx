@@ -20,7 +20,7 @@ const contato: EventComponent = {
   link: "https://share.google/5G3dDzJXVPjbWrB7U",
   lat: -22.74786396191474,
   lng: -47.328218658668746,
-  mapUrl: "https://share.google/5G3dDzJXVPjbWrB7U",
+  mapUrl: "https://maps.app.goo.gl/Pt9yQTTBq6hj2V7N6",
 };
 
 const Page = () => {

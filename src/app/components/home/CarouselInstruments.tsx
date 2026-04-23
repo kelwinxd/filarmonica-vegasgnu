@@ -8,11 +8,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const linkIntruments = "#forms"
+
 const slides = [
-  { id: 1, image: "/trompete-1.png", href: "#" },
-  { id: 2, image: "/trombone-1.png", href: "#" },
-  { id: 3, image: "/trompa-1.png", href: "#" },
-  { id: 4, image: "/bombardino-1.png", href: "#" },
+  { id: 1, image: "/trompete-1.png", href: linkIntruments },
+  { id: 2, image: "/trombone-1.png", href: linkIntruments },
+  { id: 3, image: "/trompa-1.png", href: linkIntruments },
+  { id: 4, image: "/bombardino-1.png", href: linkIntruments },
 ];
 
 const CarouselInstruments = () => {

@@ -51,5 +51,5 @@ export function EventMap({ event }: { event: EventComponent }) {
   }, [event]);
 
   // 👇 ref no div, sem id fixo
-  return <div ref={containerRef} style={{ width: "100%", height: "340px", borderRadius: "8px" }} />;
+  return <div ref={containerRef} style={{ width: "100%", zIndex:4, height: "340px", borderRadius: "8px" }} />;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import CardDepoimento from './CardDepoimento';
+import { Arrow } from './Arrow';
 
 const depoimentos = [
   {
@@ -37,9 +38,9 @@ const Depoimentos = () => {
       
       </div>
       {/* Quem Somos */}
-      <div className="flex  gap-8 md:gap-10 mt-[46px]">
-        <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-2xl md:text-3xl font-medium text-parag">
+      <div className="flex  gap-2 md:gap-4 mt-[46px]">
+        <Arrow />
+        <p className="text-2xl md:text-[28px] font-medium text-parag">
           Acompanhe <span className="text-main">relatos reais</span> de quem vive a experiência da filarmônica no dia a dia
         </p>
       </div>

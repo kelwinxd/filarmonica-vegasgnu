@@ -1,5 +1,6 @@
 import React from 'react'
 import CarouselInstruments from './CarouselInstruments'
+import { Arrow } from './Arrow'
 
 const Services = () => {
   return (
@@ -14,9 +15,9 @@ const Services = () => {
         </div>
      </div>
 
-      <div className="flex gap-[41px] mt-[46px]">
-        <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-3xl md:text-3xl font-medium text-parag">
+      <div className="flex gap-2 md:gap-5 mt-[46px]">
+        <Arrow />
+        <p className="text-2xl md:text-[28px] font-medium text-parag">
           Conheça os <span className="text-mainblue">instrumentos de metais</span> que fazem parte do nosso projeto e descubra <span className="text-mainblue">qual combina com você.</span>
         </p>
       </div>

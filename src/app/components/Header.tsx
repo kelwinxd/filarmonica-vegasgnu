@@ -66,7 +66,7 @@ const Header = () => {
       <li className="border-b border-gray-800 "><Link href="/#hero">Home</Link></li>
       <li className="border-b border-gray-800 mt-2"><Link href="/#sobre">Sobre nós</Link></li>
       <li className="border-b border-gray-800 mt-2"><Link href="/#cursos">Cursos</Link></li>
-      <li className="mt-2"><Link href="/#eventos">Eventos</Link></li>
+      <li className="mt-2"><Link href="/eventos">Eventos</Link></li>
     </ul>
 
     <ul className="flex-1 text-white flex flex-col justify-between px-4.5 py-2.5 mb-4 rounded-[8px]">

@@ -58,8 +58,8 @@ export default function Carousel() {
       slidesPerView={1}
       loop
       autoplay={{ delay: 12000 }}
-       modules={[ Autoplay, Pagination]}
-       
+       modules={[ Autoplay, Pagination, Navigation]}
+         navigation={true}
         speed={900}
         className="w-full"
         pagination={{ clickable: true }}

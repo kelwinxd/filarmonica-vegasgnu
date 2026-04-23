@@ -11,7 +11,7 @@ const FormContato = () => {
   
 
   return (
-    <form className="flex flex-col gap-4">
+    <form className="flex flex-col gap-4" id="forms">
 
       <h2 className="text-2xl md:text-3xl font-medium text-blackmain megatitle">
         Faça parte ou apoie essa iniciativa

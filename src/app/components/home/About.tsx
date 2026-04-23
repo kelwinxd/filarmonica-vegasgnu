@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "./Button";
 import AboutCard from "./AboutCard";
 import CarouselInstruments from "./CarouselInstruments";
+import { Arrow } from "./Arrow";
 
 const About = () => {
   return (
@@ -16,9 +17,9 @@ const About = () => {
       
       </div>
       {/* Quem Somos */}
-      <div className="flex  gap-8 md:gap-10 mt-[46px]">
-        <img src="/arrow.png" alt="" className="h-[34px] mt-2" />
-        <p className="text-2xl md:text-3xl font-medium text-parag">
+      <div className="flex  gap-2 md:gap-5 mt-[46px]">
+        <Arrow />
+        <p className="text-2xl md:text-[28px] font-medium text-parag">
           A Filarmônica de Metais Gnu/Vegas é um projeto social que oferece <span className="text-mainblue">ensino gratuito de instrumentos de metais</span>, promovendo desenvolvimento musical e humano.
         </p>
       </div>
@@ -51,34 +52,34 @@ const About = () => {
               Alunos atendidos
             </h2>
             <p className="text-subparag text-[16px] md:text-[20px] leading-6 mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, dolor.
+              Formando novos talentos na música
             </p>
           </AboutCard>
 
             <AboutCard title="+2 Anos">
           <h2 className="text-[16px] md:text-[20px] text-main font-bold">
-              Alunos atendidos
+             De atuação
             </h2>
             <p className="text-subparag text-[16px] md:text-[20px] leading-6 mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, dolor.
+             Transformando vidas desde 2022
             </p>
           </AboutCard>
 
             <AboutCard title="+50">
             <h2 className="text-[16px] md:text-[20px] text-main font-bold">
-              Alunos atendidos
+              Apresentações e ensaios
             </h2>
             <p className="text-subparag text-[16px] md:text-[20px] leading-6 mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, dolor.
+              Experiência prática e evolução contínua
             </p>
           </AboutCard>
 
             <AboutCard title="100%">
             <h2 className="text-[16px] md:text-[20px] text-main font-bold">
-              Alunos atendidos
+              Projeto social
             </h2>
             <p className="text-subparag text-[16px] md:text-[20px] leading-6 mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, dolor.
+              Ensino gratuito e acessível
             </p>
           </AboutCard>
         </div>
