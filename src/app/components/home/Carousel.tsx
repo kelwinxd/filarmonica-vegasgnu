@@ -21,11 +21,11 @@ const slides : Slide[] = [
     desc:"Participe de um projeto que une ensino de instrumentos de metais, desenvolvimento pessoal e acompanhamento especializado para crianças, jovens e adultos.",
     primaryButton: {
     label: "Quero me Inscrever",
-    href: "#"
+    href: "#forms"
   },
   secondaryButton: {
     label: "Saiba Mais",
-    href: "#"
+    href: "#sobre"
   }
   },
   { 

@@ -15,7 +15,8 @@ const Services = () => {
         </div>
      </div>
 
-      <div className="flex gap-2 md:gap-5 mt-[46px]">
+      <div className="flex gap-2 md:gap-5
+       mt-[46px]">
         <Arrow />
         <p className="text-2xl md:text-[28px] font-medium text-parag">
           Conheça os <span className="text-mainblue">instrumentos de metais</span> que fazem parte do nosso projeto e descubra <span className="text-mainblue">qual combina com você.</span>

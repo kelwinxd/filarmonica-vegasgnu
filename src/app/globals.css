@@ -40,12 +40,15 @@ textarea {
   --color-btn: #084B83;
   --color-mainyellow: #F6C15A;
   --color-hmainyellow:#F8D184;
+  --color-grayadmin:#1d1c1b;
+
   --font-fam-parag: font-family: "Space Grotesk", sans-serif;
   --font-fam-main:"Space Grotesk", sans-serif; 
   --font-famain: font-family: "Space Grotesk", sans-serif;
   --font-title: "Unbounded", sans-serif;
   --text-color-subparag: #535353;
   --text-color-parag: #080708;
+  
 
 }
 
@@ -65,7 +68,9 @@ textarea {
   }
 }
 
-
+.main-font {
+   font-family: "Space Grotesk", sans-serif !important;
+}
 .megatitle {
   font-family: "Unbounded", sans-serif;
 }

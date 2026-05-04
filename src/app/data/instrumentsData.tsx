@@ -1,0 +1,38 @@
+export const instrumentos = [
+  {
+    id: 1,
+    slug: "trompete",
+    nome: "Trompete",
+    imagem: "/trompete-1.png",
+    descricaoCurta: "Som brilhante e marcante, ideal para quem gosta de destaque.",
+    descricaoLonga: "O trompete é um instrumento de sopro da família dos metais...",
+    videos: "https://www.youtube.com/watch?v=2SJ1fwGCzgQ",
+  },
+  {
+    id: 2,
+    slug: "trombone",
+    nome: "Trombone",
+    imagem: "/trombone-1.png",
+    descricaoCurta: "Som forte e expressivo, com grande presença musical.",
+    descricaoLonga: "O trombone se destaca pelo seu mecanismo de vara...",
+    videos: "https://www.youtube.com/watch?v=2SJ1fwGCzgQ",
+  },
+  {
+    id: 3,
+    slug: "trompa",
+    nome: "Trompa",
+    imagem: "/trompa-1.png",
+    descricaoCurta: "Som suave e elegante, perfeito para quem busca equilíbrio.",
+    descricaoLonga: "A trompa possui um timbre único e aveludado...",
+    videos: "https://www.youtube.com/watch?v=2SJ1fwGCzgQ",
+  },
+  {
+    id: 4,
+    slug: "bombardino",
+    nome: "Bombardino",
+    imagem: "/bombardino-1.png",
+    descricaoCurta: "Timbre aveludado e envolvente, fácil de apreciar.",
+    descricaoLonga: "O bombardino é muito usado em bandas sinfônicas...",
+    videos: "https://www.youtube.com/watch?v=2SJ1fwGCzgQ",
+  },
+];

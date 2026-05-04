@@ -31,10 +31,12 @@ const About = () => {
 
             <div className="flex flex-col items-center lg:place-items-end md:flex-row gap-6 mt-[34px] lg:mt-[64px]">
               <Button variant="secondary" text="dark" border="outline">
-                Quero ser Parceiro
+                <a href="#forms">Quero ser Parceiro</a>
+                
               </Button>
               <Button variant="primary" text="light">
-                Quero me inscrever
+                <a href="#forms"> Quero me inscrever</a>
+               
               </Button>
             </div>
           </div>
